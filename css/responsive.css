@@ -1,0 +1,49 @@
+@media (max-width: 750px){
+  html{
+    overflow-x: hidden;
+  }
+  .fa-quote-left{
+    margin-left: 0rem;
+    margin-right: 1rem;
+  }
+  .hero-heading{
+    margin-top: 5rem;
+    font-size: 1.2rem;
+  }
+  .hero{
+    background: url("../image/hero-img.png") no-repeat bottom/cover;
+    height: 30.75rem;
+  }
+  .hero .hero-img{
+      width: 10.75rem;
+  }
+  .slider-img{
+      width: 70%;
+      margin: auto;
+  }
+  .prcie-item{
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 890px){
+  .hero{
+    background: url("../image/hero-img.png") no-repeat bottom/cover;
+    height: 30.75rem;
+  }
+  .hero-heading{
+    margin-top: 5rem;
+    font-size: 1.6rem;
+  }
+  .hero .hero-img{
+    width: 10.75rem;
+}
+}
+@media (max-width: 920px){
+  .hero{
+    background: url("../image/hero-img.png") no-repeat bottom/cover;
+    height: 35rem;
+  }
+  .hero-heading{
+    margin-top: 5rem;
+  }
+}

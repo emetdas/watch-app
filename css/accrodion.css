@@ -1,0 +1,68 @@
+details{
+    position: relative;
+    margin: 2rem auto;
+    width: 80%;
+    box-shadow:  -1px 6px 18px -3px rgba(211, 211, 211, 0.418);
+    background-color: #fff;
+}
+details [open]{
+    outline: none;
+    height: 17rem;
+}
+details summary {
+    padding: 0.8rem;
+    cursor: pointer;
+    color: #627d98;
+    font-weight: 600;
+    outline: none;
+}
+details > summary::-webkit-details-marker{
+    display: none;
+}
+details > summary::after {
+    right: 5%;
+    position: absolute;
+    content: url(../image/arrow-right.png);
+    width: 1.2rem;
+    height: 1.2rem;
+    display: inline-flex;
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+  
+details[open] > summary::after {
+    content: url(../image/arrow-dwon.png);
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}
+details p{
+    text-align: justify;
+    padding:1rem 0.5rem;
+}
+details[open] summary{
+    color: #2186eb;
+}
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+    -webkit-animation: sweep .5s ease-in-out;
+}
+  
+@keyframes sweep {
+    0%    {opacity: 0;
+         margin-top: -10px
+         }
+    100%  {opacity: 1; 
+        margin-top: 0px
+    }
+  }
